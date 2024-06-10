@@ -9,23 +9,13 @@ import { DxDataGridModule, DxFormModule } from 'devextreme-angular';
 
 const routes: Routes = [
   {
-    path: 'tasks',
-    component: TasksComponent,
-    canActivate: [ AuthGuardService ]
-  },
-  {
-    path: 'profile',
-    component: ProfileComponent,
+    path: 'camera',
+    loadChildren: () => import('./pages/camera/camera.module').then(m => m.CameraModule),
     canActivate: [ AuthGuardService ]
   },
   {
     path: 'home',
     component: HomeComponent,
-    canActivate: [ AuthGuardService ]
-  },
-  {
-    path: 'login-form',
-    component: LoginFormComponent,
     canActivate: [ AuthGuardService ]
   },
   {

@@ -5,6 +5,11 @@ export const navigation = [
     icon: 'home'
   },
   {
+    text: 'Camera',
+    path: '/camera',
+    icon: 'photo'
+  },
+  {
     text: 'Examples',
     icon: 'folder',
     items: [
